@@ -7,7 +7,7 @@ import utilities.Driver;
 
 public class FacebookPages {
     public FacebookPages() {
-        PageFactory.initElements(Driver.getDriver(),this);
+        PageFactory.initElements(Driver.getDriver(), this);
 
     }
 
@@ -17,16 +17,14 @@ public class FacebookPages {
     @FindBy(xpath = "//*[@name='email']")
     public WebElement email;
 
-    @FindBy (xpath = "//*[@id='pass']")
+    @FindBy(xpath = "//*[@id='pass']")
     public WebElement password;
 
     @FindBy(xpath = "//*[@name='login']")
-    public  WebElement logIn;
+    public WebElement logIn;
 
     @FindBy(xpath = "//*[@class='_9ay7']")
     public WebElement basarisizGiris;
-
-
 
 
 }

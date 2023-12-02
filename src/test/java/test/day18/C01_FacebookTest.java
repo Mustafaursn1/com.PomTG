@@ -10,17 +10,17 @@ public class C01_FacebookTest {
 
 
     @Test
-    public void test01(){
+    public void test01() {
         //Facebook `agidleim
         Driver.getDriver().get("https://www.facebook.com");
         //POM A ygunolarka password ve login butonunu locate ediniz
 
-        FacebookPages facebookPages=new FacebookPages();
+        FacebookPages facebookPages = new FacebookPages();
         facebookPages.cookies.click();
 
 
         //Faker class kullanarak email ve sifre belirleyiniz
-        Faker faker=new Faker();
+        Faker faker = new Faker();
 
         facebookPages.email.sendKeys(faker.internet().emailAddress());
 
@@ -30,11 +30,12 @@ public class C01_FacebookTest {
         facebookPages.logIn.click();
 
         //Basarili giris yapilmadigini Assertion ile kont ediniz
-        SoftAssert softAssert=new SoftAssert();
-        softAssert.assertTrue(facebookPages.basarisizGiris.isDisplayed(),"giris basarili");
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertTrue(facebookPages.basarisizGiris.isDisplayed(), "giris basarili");
         softAssert.assertAll();
         System.out.println("*****************************");
-        System.out.println("Basaris Giris Tex:"+facebookPages.basarisizGiris.getText());
+        System.out.println("Basaris Giris Tex:" + facebookPages.basarisizGiris.getText());
+        Driver.quitDriver();
 
 
 
