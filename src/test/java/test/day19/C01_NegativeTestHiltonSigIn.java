@@ -7,7 +7,7 @@ import pages.HiltonPages;
 import utilities.ConfigurationReader;
 import utilities.Driver;
 
-public class C01_PositiveTestHiltonSigIn {
+public class C01_NegativeTestHiltonSigIn {
     /*
 1) Bir Class olustur : PositiveTest
 2) Bir test method olustur positiveLoginTest)

@@ -17,6 +17,7 @@ public class C02_SingletonPattern {
         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         SingletonPattern: Tekli kullanim demektir.Bir class in
         farkli class lardan obj olusturup kullanimini engellemektir
+        !-->Bunun Tam Tersi Conventional Implementation olarak isimlendirilir<---!
         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
          */
