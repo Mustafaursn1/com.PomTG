@@ -38,7 +38,12 @@ public class C01_FacebookTest {
         Driver.quitDriver();
 
 
+    }
 
+    @Test
+    public void test02() {
+
+        System.out.println("Bu testv sonra planlanir");
     }
 
 }

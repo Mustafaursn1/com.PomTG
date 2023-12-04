@@ -1,0 +1,19 @@
+<!--
+xml ,projemize isteklerimizi iletmek icin hazirladigimiz bir haberlesme dosyasidir
+Biz xml dosyasi saysinde test class imizi acmadan run tusuna basmadan istedigimiz
+ test meth istedigimiz class i ve istedigimiz package ' i calistirabilir ve package
+ icinde hangi class in ya da hangi test meth. calisip ca,ismaxyacaini yönetebiliriz
+ HTML kodlaeindaki gibi tag larin acilip kapanisina dikkat etmemeiz gerekir
+ xml dosyasi olustururken <!DOCTYPE  komutu ile baslamaiz gerekir .Bunu TestNG Sayfasindan da alabiliriz
+ Sonrasinda suite tag i ile baslayip hangi testi calistiracaksak onan göre xml formatini yazmamiz gerekir
+
+-->
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="istenen class lari calsitirma">
+    <test name="classlar">
+        <classes>
+            <class name="test.day17.C02_AmazonPageTest"/>
+            <class name="test.day17.C01_DriverFirstTest"/>
+        </classes>
+    </test>
+</suite>
