@@ -7,6 +7,8 @@ Biz xml dosyasi saysinde test class imizi acmadan run tusuna basmadan istedigimi
  xml dosyasi olustururken <!DOCTYPE  komutu ile baslamaiz gerekir .Bunu TestNG Sayfasindan da alabiliriz
  Sonrasinda suite tag i ile baslayip hangi testi calistiracaksak onan göre xml formatini yazmamiz gerekir
 
+ https://testng.org/doc/documentation-main.html
+
 -->
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="istenen class lari calsitirma">
