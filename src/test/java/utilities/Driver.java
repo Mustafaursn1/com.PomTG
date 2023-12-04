@@ -2,6 +2,7 @@ package utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.github.bonigarcia.wdm.managers.OperaDriverManager;
+import org.checkerframework.checker.units.qual.C;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -9,6 +10,7 @@ import org.openqa.selenium.chromium.ChromiumDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.testng.reporters.jq.INavigatorPanel;
 
 import java.time.Duration;
 
@@ -39,6 +41,7 @@ public class Driver {
                     driver = new EdgeDriver();
                     break;
 
+
                 default:
 
                     WebDriverManager.chromedriver().setup();
@@ -59,7 +62,7 @@ public class Driver {
 
         if (driver != null) {
             driver.quit();
-            //driver=null; //kapandiktaan sonra driver default olarak null `esittir ama biz yine de null` aesitledik
+            driver = null; //kapandiktaan sonra driver default olarak null `esittir ama biz yine de null` aesitledik
         }
 
     }
