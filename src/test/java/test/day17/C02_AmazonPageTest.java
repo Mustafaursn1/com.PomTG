@@ -16,5 +16,14 @@ public class C02_AmazonPageTest {
         Driver.quitDriver();
 
     }
+    @Test(groups = "gp2")
+    public void test2() {
+        Driver.getDriver().get("https://www.amazon.com");
+        amazonPages.searchBox.sendKeys("Samsung Handy", Keys.ENTER);
+        Driver.quitDriver();
+
+    }
+
+
 
 }

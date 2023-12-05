@@ -21,4 +21,16 @@ public class C01_DriverFirstTest {
 
     }
 
+    @Test
+    public void test02() {
+        Driver.getDriver().get("https://zalando.com.de");
+
+
+        Driver.quitDriver();
+
+
+    }
+
+
+
 }
