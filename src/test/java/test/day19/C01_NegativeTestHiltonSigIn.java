@@ -19,7 +19,7 @@ public class C01_NegativeTestHiltonSigIn {
      */
     HiltonPages hiltonPages = new HiltonPages();
 
-    @Test
+    @Test (groups = "gp2")
     public void test01() {
         String hotelUrl = ConfigurationReader.getProperty("hotelUrl");
         Driver.getDriver().get(hotelUrl);

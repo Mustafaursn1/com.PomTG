@@ -40,7 +40,7 @@ public class C01_FacebookTest {
 
     }
 
-    @Test
+    @Test(groups = "gp1")
     public void test02() {
 
         System.out.println("Bu testv sonra planlanir");

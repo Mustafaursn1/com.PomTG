@@ -5,7 +5,7 @@ import utilities.Driver;
 
 public class C01_DriverFirstTest {
 
-    @Test
+    @Test (groups = "gp1")
 /*Driver Class i extend yapmaya gerekm kalmadan direk
  Driver class indan obj olusturarak ya da variable
  ve meth lar static ise dogrudan class adi ile meth ve variable cahirabiliriz

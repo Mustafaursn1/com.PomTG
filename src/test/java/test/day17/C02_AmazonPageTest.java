@@ -9,7 +9,7 @@ public class C02_AmazonPageTest {
 
     AmazonPages amazonPages = new AmazonPages();
 
-    @Test
+    @Test(groups = "gp1")
     public void test1() {
         Driver.getDriver().get("https://www.amazon.com");
         amazonPages.searchBox.sendKeys("Nutella", Keys.ENTER);
