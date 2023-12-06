@@ -11,7 +11,7 @@ Biz xml dosyasi saysinde test class imizi acmadan run tusuna basmadan istedigimi
 
 -->
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="istenen class lari calsitirma">
+<suite name="istenen class lari calsiltirma">
     <test name="classlar">
         <classes>
             <class name="test.day17.C02_AmazonPageTest"/>

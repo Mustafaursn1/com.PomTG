@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="allTest">
+    <test name="regression">
+        <packages>
+
+            <package name="test.*"></package>  <!-- tüm tetsleri aliyoruz -->
+        </packages>
+
+
+    </test>
+
+</suite>
