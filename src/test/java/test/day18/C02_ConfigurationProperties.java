@@ -5,7 +5,7 @@ import utilities.ConfigurationReader;
 import utilities.Driver;
 
 public class C02_ConfigurationProperties {
-    @Test (groups = "gp2")
+    @Test(groups = "gp2")
     public void test01() {
         String urlAmz = ConfigurationReader.getProperty("amazonUrl");
         String urlFace = ConfigurationReader.getProperty("faceUrl");
@@ -13,4 +13,5 @@ public class C02_ConfigurationProperties {
         Driver.getDriver().get(urlFace);
         Driver.quitDriver();
     }
+
 }
