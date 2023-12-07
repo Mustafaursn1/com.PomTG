@@ -40,8 +40,9 @@ public class C01_WindowsHandlesReusablesMeth {
         Driver.quitDriver();
 
     }
+
     @Test
-    public void test02(){
+    public void test02() {
         HerOkuPage herOkuPage = new HerOkuPage();
         // https|://the-internet.herokuapp.com/windows adresine gidin.
         Driver.getDriver().get("https://the-internet.herokuapp.com/windows");
@@ -50,16 +51,13 @@ public class C01_WindowsHandlesReusablesMeth {
         // Click Here butonuna basiniz
         herOkuPage.clickWindowHandl.click();
         ReusableMethods.switchToWindow("New Window");
-        String expectedTitel="New Window";
-        String actualTitel=Driver.getDriver().getTitle();
-        SoftAssert softAssert=new SoftAssert();
-        softAssert.assertEquals(expectedTitel,actualTitel);
+        String expectedTitel = "New Window";
+        String actualTitel = Driver.getDriver().getTitle();
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertEquals(expectedTitel, actualTitel);
         softAssert.assertAll();
 
         Driver.quitDriver();
-
-
-
 
 
     }
