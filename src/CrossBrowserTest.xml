@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Cross browser class test">
+    <test name="Cross browser Chorome test">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="test.day21.C01_WindowsHandlesReusablesMeth"></class>
+        </classes>
+        
+    </test>
+    
+    <test name="Cross browser test">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="test.day21.ScreenShotReusableMeth"></class>
+        </classes>
+
+    </test>
+    
+    
+</suite>
+<!--
+Interview sorusu : CrossBrowser biliyormusunuz. Biliyorsaniz kisaca anlatirm1s1n1z
+-Öncelikle CrossBrowser yapmak icin TestNG framework'unde utilities package'1 altinda bir tane driver class'1 olustururum.
+XML dosyasindan gönderecegim browser'lar1 burada tanimlamak için parametreli bir method olustururum.
+-Sonrasinda yine utilities package'1 altinda TestBase class'1 olustururum. Bu class'da parametre notasyonu
+ile bir method olustururum ve drive'1m bu method altinda daha önce olusturmus oldugum driver class'da olusturdugum parametreli methoda atama yaparim ve XML dosyasindan parametre olarak browser ne gelirse onu çalistirir.
+Sonra CrossBrowser yapacagim test class'larm olusturur ve olusturmus oldugum TestBase class'a extends yaparam.
+-Son olarak XML dosyam olusturur hangi class'larimi hangi browser ile calistracaksam test tag'indan sonra parametre tag'1
+ile browser'1m1 seçerim.
+Eger paralel olarak CrossBrowser yapacaksam suite tag'ina paralel ve thread-count degerlerini eklerim. -->
+
