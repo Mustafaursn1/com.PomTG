@@ -48,7 +48,7 @@ public class C01_WindowsHandlesReusablesMeth {
         Driver.getDriver().get("https://the-internet.herokuapp.com/windows");
 
 
-        // Click Here butonuna basiniz
+        // Click Here butonuna basinizf
         herOkuPage.clickWindowHandl.click();
         ReusableMethods.switchToWindow("New Window");
         String expectedTitel = "New Window";
