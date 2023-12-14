@@ -5,6 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.AmazonPages;
+import pages.EbayPages;
 import utilities.ConfigurationReader;
 import utilities.Driver;
 
@@ -32,9 +33,11 @@ public class C01_DataProvider {
         //amazona gidelim
         //java, selenium, samsung ve iphone icin aroma yapalim
         // sonuclarin aradigimiz kelime icerdigini test edelim /sayfayi kapatalim
-        AmazonPages amazonPages = new AmazonPages();
-        Driver.getDriver().get(ConfigurationReader.getProperty("amazonUrl"));
-        amazonPages.searchBox.sendKeys(kelimeler, Keys.ENTER);
+        EbayPages ebayPages = new EbayPages();
+        Driver.getDriver().get(ConfigurationReader.getProperty("ebayUrl"));
+        ebayPages.searchBox.sendKeys(kelimeler, Keys.ENTER);
+
+        Driver.quitDriver();
 
 
     }

@@ -7,9 +7,13 @@ import utilities.Driver;
 
 public class EbayPages {
     public EbayPages() {
-        PageFactory.initElements(Driver.getDriver(),this);
+        PageFactory.initElements(Driver.getDriver(), this);
     }
-@FindBy(xpath = "(//*[text()='Electronics'])[2]")
+
+    @FindBy(xpath = "(//*[text()='Electronics'])[2]")
     public WebElement electronict;
+
+    @FindBy(xpath = "//*[@id='gh-ac']")
+    public WebElement searchBox;
 
 }
