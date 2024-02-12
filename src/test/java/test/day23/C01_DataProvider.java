@@ -15,6 +15,11 @@ import java.util.Date;
 public class C01_DataProvider {
 
 
+    @DataProvider
+    public static Object[][] aranacakKelimeler2() {
+        return new Object[][]{{"iphone"},{"Samsung"},{"kopfhörer"},{"Macbook Pro"}};
+    }
+
     @Test
     public void test01() {
         AmazonPages amazonPages = new AmazonPages();
@@ -38,6 +43,27 @@ public class C01_DataProvider {
         ebayPages.searchBox.sendKeys(kelimeler, Keys.ENTER);
 
         Driver.quitDriver();
+
+
+    }
+
+    @Test(dataProvider = "aranacakKelimeler2")
+    public void test03(String kelimeler){
+        //amazona gidelim
+        AmazonPages amazonPages=new AmazonPages();
+        Driver.getDriver().get(ConfigurationReader.getProperty("amazonUrl"));
+
+
+        //iphone , Samsung,kopfhörer, Macbook Pro aratiniz
+        amazonPages.searchBox.sendKeys(kelimeler,Keys.ENTER);
+        // sonuclarin aradigimiz kelime icerdigini test edelim /sayfayi kapatalim
+
+        String actualKelime=amazonPages.writingOfResult.getText();
+        Assert.assertTrue(actualKelime.contains(kelimeler));
+
+        //Sayfayi Kapatlim
+        Driver.quitDriver();
+
 
 
     }
