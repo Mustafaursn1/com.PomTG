@@ -23,7 +23,8 @@ Interview sorusu : CrossBrowser biliyormusunuz. Biliyorsaniz kisaca anlatirm1s1n
 -Öncelikle CrossBrowser yapmak icin TestNG framework'unde utilities package'1 altinda bir tane driver class'1 olustururum.
 XML dosyasindan gönderecegim browser'lar1 burada tanimlamak için parametreli bir method olustururum.
 -Sonrasinda yine utilities package'1 altinda TestBase class'1 olustururum. Bu class'da parametre notasyonu
-ile bir method olustururum ve drive'1m bu method altinda daha önce olusturmus oldugum driver class'da olusturdugum parametreli methoda atama yaparim ve XML dosyasindan parametre olarak browser ne gelirse onu çalistirir.
+ile bir method olustururum ve drive'1m bu method altinda daha önce olusturmus oldugum driver
+class'da olusturdugum parametreli methoda atama yaparim ve XML dosyasindan parametre olarak browser ne gelirse onu çalistirir.
 Sonra CrossBrowser yapacagim test class'larm olusturur ve olusturmus oldugum TestBase class'a extends yaparam.
 -Son olarak XML dosyam olusturur hangi class'larimi hangi browser ile calistracaksam test tag'indan sonra parametre tag'1
 ile browser'1m1 seçerim.
