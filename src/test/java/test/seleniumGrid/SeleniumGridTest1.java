@@ -11,6 +11,8 @@ import java.net.URL;
 
 public class SeleniumGridTest1 {
 
+    //SeleniumServer % java -jar selenium-server-4.18.1.jar standalone
+
     WebDriver driver;
 
     @Test
